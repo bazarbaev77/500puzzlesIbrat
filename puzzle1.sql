@@ -26,6 +26,7 @@ SELECT 275 , 2006 ,  '1324000.00'
 select *, 
        lag(CurrentQuota, 1, 0) over (order by (select null)) as lagCurrentData
 from #lag;
+<<<<<<< HEAD
 
 --SOLUTION 2
 
@@ -38,3 +39,5 @@ select BusinessEntityID, SalesYear, a.CurrentQuota,
 ) as previousnumber 
 from #lag as a
 order by CurrentQuota
+=======
+>>>>>>> e5505ac04eed6d29a50230dfbf999ff9490b8f8b
